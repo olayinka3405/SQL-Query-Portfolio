@@ -1,4 +1,4 @@
-USE [SuperStoreProject]
+USE [SuperStoreProject]  --Use to switch to a database
 
 --Basic select query retrieving all columns from a table.
 
