@@ -1,4 +1,4 @@
--- Create a database
+-- Query used to create a database
 CREATE DATABASE Social_Buzz;
 
 -- Use the created database
