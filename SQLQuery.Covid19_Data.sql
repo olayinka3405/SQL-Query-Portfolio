@@ -1,6 +1,6 @@
 --COVID DATA 2020 TO DATE
 
-USE PortfolioProjects;
+USE PortfolioProjects;  --Query used to switch to a database
 
 --Retrieve data (all columns) from database-CovidDeaths
 SELECT * FROM PortfolioProjects.[dbo].[CovidDeaths]
