@@ -37,6 +37,6 @@ If you have any suggestions, improvements, or additional SQL queries you'd like 
 
 ## Connect with Me
 
-If you have any questions, feedback, or just want to connect, you can reach me at - abidoyeolayinka@yahoo.com
+If you have any questions, feedback, or just want to connect, you can reach me at abidoyeolayinka@yahoo.com
 
 ## Happy querying!
