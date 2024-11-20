@@ -18,7 +18,7 @@ FROM PortfolioProjects..CovidDeaths
 WHERE continent IS NOT NULL
 ORDER BY 1, 2
 
---Which country have the highest death rate compare to population
+--Which country has the highest death rate compare to population
 --Comparing the total number of COVID cases to the total number of COVID-related deaths
 --Shows likelihood a person would died if infected with Covid-19
 SELECT [Location] AS Country, SUM([new_cases]) AS 'Total Case', SUM([new_deaths]) AS 'Total Death',
@@ -71,7 +71,7 @@ OR CD.location LIKE '%kingdom%'
 GROUP BY CD.location
 ORDER BY 'Infection Rate' DESC 
 
---Which continent have the highest death rate compare to population
+--Which continent has the highest death rate compare to population
 --Examining the continent with the most significant number of deaths @before Vaccination
 SELECT Continent, SUM([new_cases]) AS 'Total Cases', SUM([new_deaths]) AS 'Total Deaths', ROUND(((SUM([new_deaths]) / SUM([new_cases])) * 100), 4) AS 'Death Rate'
 FROM PortfolioProjects..CovidDeaths
@@ -79,7 +79,7 @@ WHERE continent IS NOT NULL
 GROUP BY continent
 ORDER BY 3 DESC
 
---Which country have the highest death rate compare to population
+--Which country has the highest death rate compare to population
 --Examining the country with the most significant number of deaths @before Vaccination
 SELECT Location AS Countries, SUM([new_cases]) AS 'Total Cases', MAX(CONVERT(FLOAT, total_deaths)) AS 'Total Deaths', ROUND((MAX(CONVERT(FLOAT, total_deaths)) / SUM([new_cases]) * 100), 4) AS 'Deaths Rate'
 FROM PortfolioProjects..CovidDeaths
